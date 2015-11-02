@@ -1,0 +1,532 @@
+/*
+Theme Name: First WooCommerce Theme
+Author: Toni
+Author URI: http://www.tozs.eu/
+Version: 1.0
+*/
+
+
+body {
+	font-family: Arial, sans-serif;
+	font-size: 14px;
+	color: #000;
+	background: #fff;
+}
+
+div#container {
+	width: 70%;
+	float: left;
+	padding-top: 50px;
+}
+
+
+.site-header .menu a:hover{
+	color: #fff;
+}
+p {
+	line-height: 1.65em;
+}
+
+/* General Layout */
+div.head-container {
+	max-width: 1360px;
+	margin: 0 auto;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+article.post {
+	border-bottom: 2px dotted #bbbbbb;
+}
+
+article.post:last-of-type {
+	border-bottom: none;
+}
+
+/* Aside Styles */
+article.post-aside,
+article.post-link {
+	font-size: 125%;
+	background-color: #FFF5CB;
+	padding: 20px;
+	border-radius: 5px;
+	box-shadow: 3px 3px 3px rgba(0, 0, 0, 1);
+}
+
+.mini-meta {
+	font-size: 68%;
+	margin: 0;
+	color: #777;
+}
+
+/* Link Post Format Styles */
+article.post-link {
+	padding: 0;
+	background-color: #E0C0EC;
+}
+
+article.post-link a {
+	display: block;
+	padding: 20px;
+}
+
+/* Post Format Gallery Styles */
+article.post-gallery {
+	background-color: #222;
+	color: #FFF;
+	padding: 20px;
+}
+
+article.post-gallery img {
+	border: none!important;
+}
+
+article.post-gallery h2 {
+	text-align: center;
+}
+
+/* Header */
+.site-header {
+	border-bottom: 2px solid #999;
+}
+
+/* Footer */
+.site-footer {
+	border-top: 2px solid #999;
+	margin-top: 30px;
+}
+
+
+/* Navigation Menus */
+.site-nav ul {
+	margin: 0;
+	padding: 0;
+}
+
+.site-nav ul:before, .site-nav ul:after { content: ""; display: table; }
+.site-nav ul:after { clear: both;}
+.site-nav ul { *zoom: 1; }
+
+.site-nav ul li {
+	list-style: none;
+	float: left;
+}
+
+/* Site Header Menu */
+.site-header nav ul li {
+	margin: 0 5px 0 0;
+}
+.site-header nav ul li a:link,
+.site-header nav ul li a:visited {
+	display: block;
+	padding: 10px 18px;
+	border: 1px solid #000;
+	border-radius: 5px 5px 0px 0px;
+	border-bottom: none;
+	text-decoration: none;
+}
+
+.site-header nav ul li a:hover {
+	background-color: #C4C4C4;
+}
+
+.site-header nav ul li.current-menu-item a:link,
+.site-header nav ul li.current-menu-item a:visited,
+.site-header nav ul li.current-page-ancestor a:link,
+.site-header nav ul li.current-page-ancestor a:visited {
+	background-color: #000;
+	color: #fff;
+}
+
+/* Main Column */
+.main-column {
+	width: 66%;
+	float: left;
+}
+
+/* Side Column */
+.secondary-column {
+	width: 28%;
+	margin: 0 auto;
+	float: right;
+	padding-top: 50px;
+
+}
+
+.side-column .widget-item {
+	border-bottom: 1px solid #DDD;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+}
+
+h2.widget-title {
+	font-weight: normal;
+	margin-bottom: 10px;
+	color: #888;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 138%;
+}
+
+.widget-item ul {
+	margin: 0;
+	padding: 0;
+}
+
+.widget-item ul li {
+	list-style-position: inside;
+	line-height: 1.65em;
+}
+
+.widget-item p:last-child {
+	margin: 0;
+}
+
+/* Footer Widget Areas */
+.footer-widgets {
+	padding-top: 40px;
+	margin-right: -40px;
+}
+
+.footer-widget-area {
+	width: 25%;
+	float: left;
+	box-sizing: border-box;
+	padding-right: 40px;
+}
+
+
+/* Footer Menu */
+.site-footer nav ul li {
+	margin: 0 10px 0 0;
+	padding: 0 10px 0 0;
+	border-right: 1px dotted #BBB;
+}
+
+
+/* Page Layout */
+article.page h2 {
+	font-size: 300%;
+}
+
+/* Clearfix */
+.clearfix:before, .clearfix:after {
+	content: "";
+	display: table;
+}
+.clearfix:after {
+	clear: both;
+}
+.clearfix {
+	*zoom: 1;
+}
+
+/* Two Column Title Layour */
+div.title-column {
+	width: 29%;
+	float: left;
+}
+
+div.text-column {
+	width: 69%;
+	float: right;
+}
+
+
+/* Info Box Styles */
+div.info-box {
+	width: 30%;
+	float: right;
+	margin: 0 0 30px 30px;
+	padding: 10px;
+	background-color: #eee;
+}
+
+div.info-box h4 {
+	margin: 0 0 6px 0;
+}
+
+div.info-box p {
+	font-size: 85%;
+}
+
+
+/* Children Links */
+.children-links {
+	margin-bottom: 20px;
+	font-size: 80%;
+}
+
+.children-links a:link,
+.children-links a:visited {
+	text-decoration: none;
+}
+
+.children-links ul {
+	float: left;
+}
+
+.children-links li {
+	margin-right: 20px;
+}
+
+.children-links .parent-link {
+	float: left;
+	margin-right: 20px;
+	padding-right: 20px;
+	border-right: 1px solid #DDD;
+	font-size: 120%;
+	font-weight: bold;
+}
+
+.children-links .parent-link a:link,
+.children-links .parent-link a:visited {
+	color: #333;
+}
+
+.children-links .current_page_item a:link,
+.children-links .current_page_item a:visited {
+	border-bottom: 1px solid #DDD;
+	color: #333;
+	cursor: default;
+}
+
+/* Post Styles */
+.post h2 {
+	margin-bottom: 0;
+}
+
+p.post-info {
+	font-size: 87%;
+	color: #999;
+}
+
+p.post-info a:link,
+p.post-info a:visited {
+	color: #999;
+}
+
+/* Search */
+div.hd-search {
+	float: right;
+}
+
+div.hd-search label {
+	position: absolute;
+	left: -9999px;
+}
+
+div.hd-search #searchsubmit {
+	background-color: #006ec3;
+	color: #FFF;
+	padding: 5px 14px;
+	border: none;
+	vertical-align: top;
+}
+
+div.hd-search #s {
+	vertical-align: top;
+	padding: 3px 0;
+}
+
+.menu{
+	margin-bottom: 30px;
+	color: #000;
+}
+h1{
+ 	color: #a46497;
+}
+.product a:hover h3{
+ 	color: #a46497;
+ }
+ h1 a:link, h1 a:visited{
+ 	color: #a46497;
+ 	text-decoration: none;
+ }
+ .product h3{
+ 	color: #000;
+ }
+ .menu a:link, .menu a:visited{
+ 	color: #a46497;
+ }
+ .gridlist-toggle a{
+ 	color: #000;
+ }
+
+ /* Default Search Box disabled*/
+ div.hd-search{
+ 	display: none;
+ }
+
+ 
+ /*Search_bar style*/
+ #searchbar {
+	text-align: center;
+	border-color: #dbdbdb;
+    color: #777;
+    font: 14px Arial, sans-serif;
+    box-shadow: none;
+    background-color: #fff;
+    border: 1px solid #e5e5e5;
+    display: block;
+    width: 100%;
+    max-width: 400px ;
+    padding: 6px 0px;
+    margin: 0 auto;
+}
+#livesearch{
+	margin: 40px 0 1em;
+    padding: 0;
+    list-style: none;
+    clear: both;
+}
+#livesearch .product {
+	float: left;
+    margin: 50px 3.8% 2.992em 0;
+    padding: 0px;
+    position: relative;
+    width: 21%;
+}
+#livesearch h3 {
+	padding: .5em 0;
+    margin: 0;
+    font-size: 1em;
+}
+ #livesearch a:visited, #livesearch a:link{
+    text-decoration: none;
+}
+
+
+
+
+
+ ul.berocket_aapf_widget {
+    padding-left: 0px;
+}
+/*Contact Form*/
+#frmContact{
+	clear: both;
+	width:	80%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+    border: 4px solid #FFF;
+}
+#frmContact .form-group {
+    margin-bottom: 15px;
+}
+#frmContact label {
+    font-weight: 400;
+    font-size: 16px;
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+}
+#frmContact .form-control{
+	border-color: #dbdbdb;
+    color: #777;
+    font: 14px Arial, sans-serif;
+    box-shadow: none;
+    background-color: #fff;
+    border: 1px solid #e5e5e5;
+    display: block;
+    width: 100%;
+    padding: 6px 0px;
+}
+#frmContact .btn , #frmContact .btn:hover, #frmContact .btn:focus, #frmContact .btn:active {
+    background: #a46497;
+    color: #fff;
+	text-decoration: none;
+	border-width: 0;
+    padding: 7px 14px;
+    font-size: 14px;
+    outline: none !important;
+}
+
+/* Media query not working :( */
+ @media screen and (max-width: 800px){
+ 	div#container{
+ 		width: 100%;
+ 		float: none;
+ 	}
+ 	.secondary-column{
+ 		width: 100%;
+ 		float: none;
+ 	}
+ }
+ .product-categories a:visited, .product-categories a:link{
+ 	color: #a46497;
+ 	text-decoration: none;
+ }
+
+ .product-categories a:hover{
+ 	text-decoration: underline;
+ }
+
+ ul.product-categories{
+ 	list-style-type: none;
+ }
+
+ label.screen-reader-text{
+ 	display: none;
+ 	visibility: hidden;
+ }
+ .berocket_filter_slider.ui-widget-content .ui-slider-range, .berocket_filter_price_slider.ui-widget-content .ui-slider-range {
+    background: none repeat scroll 0 0 #a46497;
+}
+h2, h2 a:visited, h2 a:link{
+	text-decoration: none;
+	color: #a46497;
+}
+.site-header nav ul li.current-menu-item a:link, .site-header nav ul li.current-menu-item a:visited, .site-header nav ul li.current-page-ancestor a:link, .site-header nav ul li.current-page-ancestor a:visited {
+    background-color: #C4C4C4;
+    border: 5px, 5px, 5px, 5px, solid, #000;
+}
+#yith-searchsubmit{
+	height: 30px;
+	width: 60px;
+	background-color: #C4C4C4;
+	text-align: center;
+	border-radius: 5px;
+	border: #C4C4C4;
+	color: #fff;
+}
+#yith-searchsubmit:hover{
+	background-color: #949494; 
+}
+#yith-s{
+	height: 30px;
+	border-radius: 3px;
+}
+
+p.demo_store{
+	position: inherit;
+}
+
+
+/* Custom Post Type Workers */
+.workers-container {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.workers-image {
+	position: relative;
+	max-width: 150px;
+	max-height: 150px;
+}
+
+.workers-title {
+	font-size: 200%;
+	font-weight: bold;
+	margin-top: 25px;
+	padding-bottom: 15px;
+}
+
+.workers-content {
+	margin-bottom: 30px;
+}
